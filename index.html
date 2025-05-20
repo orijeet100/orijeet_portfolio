@@ -805,312 +805,173 @@
       <!-- /education ends -->
       <!-- Projets starts -->
       <section
-        id="projects"
-        class="my-20 py-12"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div
-          class="container mx-auto bg-black/0.50 backdrop-blur-md px-4 py-12 rounded"
-        >
-          <h2 class="text-3xl font-bold mb-16">Research and Academic Projets</h2>
+  id="projects"
+  class="my-20 py-12"
+  data-aos="fade-up"
+  data-aos-duration="1000"
+>
+  <div
+    class="container mx-auto bg-black/0.50 backdrop-blur-md px-4 py-12 rounded"
+  >
+    <h2 class="text-3xl font-bold mb-16">Research and Academic Projects</h2>
 
-          <div class="project_slider">
-            <div class="projects_item rounded text-center">
-              <div class="my-2 p-2">
-                <div
-                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
-                >
-                  <img
-                    src="./src/assets/img/45_networks.png"
-                    alt="CTR"
-                    class="rounded mb-4 w-full h-full object-cover"
-                  />
-                </div>
-                <h4 class="text-xl text-orange-400 mb-2">
-                  45 Urban Metros Resilience Analysis
-                </h4>
-                <p class="italic">
-                  <strong>Python, NetworkX, Graph Theory, MatplotLib</strong>
-                </p>
-                <div class="mt-5">
-                  <p class="nb-2">
-                    ❁ Conducted resilience analysis of 45 global urban metro
-                    networks, identifying key structural attributes influencing
-                    network robustness and recovery.
-                  </p>
-                  <p class="nb-2">
-                    ❁ Developed an interpretable, computationally efficient
-                    resilience modeling approach leveraging various centralities
-                    enabling rapid assessment of network vulnerabilities without
-                    reliance on data-heavy simulations.
-                  </p>
-                </div>
-              </div>
+    <div class="project_slider">
+      <!-- Project Card Template -->
+      <a href="https://github.com/orijeet100/" target="_blank" class="block">
+        <div class="projects_item group rounded text-center transition-all duration-300 hover:cursor-pointer">
+          <div class="my-2 p-2">
+            <div class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4 transform transition-transform duration-300 group-hover:scale-110">
+              <img src="./src/assets/img/45_networks.png" alt="45 Urban Metros" class="w-full h-full object-cover" />
             </div>
-            <div class="projects_item rounded text-center">
-              <div class="my-2 p-2">
-                <div
-                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
-                >
-                  <img
-                    src="./src/assets/img/gun_detection.png"
-                    alt="CTR"
-                    class="rounded mb-4 w-full h-full object-cover"
-                  />
-                </div>
-                <h4 class="text-xl text-orange-400 mb-2">
-                  Weapon Detection System using Computer Vision
-                </h4>
-                <p class="italic">
-                  <strong>Python, YOLOv8, OpenCV, Twilio, Numpy, PIL</strong>
-                </p>
-                <div class="mt-5">
-                  <p class="nb-2">
-                    ❁ Gained 91% accuracy rate while developing a Real-time
-                    Weapon Detection framework using YOLOv8 and OpenCV,
-                    successfully detecting firearms in closed environments.
-                  </p>
-                  <p class="nb-2">
-                    ❁ Integrated WhatsApp alert system to send immediate alerts
-                    upon gun detection, enhancing response times.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="projects_item rounded text-center">
-              <div class="my-2 p-2">
-                <div
-                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
-                >
-                  <img
-                    src="./src/assets/img/documind.png"
-                    alt="CTR"
-                    class="rounded mb-4 w-full h-full object-cover"
-                  />
-                </div>
-                <h4 class="text-xl text-orange-400 mb-2">
-                  DocuFind.ai – A Document and Website Question Answering System
-                </h4>
-                <p class="italic">
-                  <strong
-                    >Python, FireCrawl, FAISS, Hugging Face Transformers,
-                    Streamlit, PyTorch, LangChain</strong
-                  >
-                </p>
-                <div class="mt-5">
-                  <p class="nb-2">
-                    ❁ Developed a Retrieval-Augmented Generation (RAG) system
-                    for document and web question answering using FAISS, Hugging
-                    Face Transformers (MiniLM), and FireCrawl, achieving 83.3%
-                    accuracy in multi-document query retrieval.
-                  </p>
-                  <p class="nb-2">
-                    ❁ Engineered a scalable vector search with FAISS and
-                    Llama-3.2-1B-Instruct, enabling real-time QA via Streamlit
-                    Frontend Interface.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="projects_item rounded text-center">
-              <div class="my-2 p-2">
-                <div
-                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
-                >
-                  <img
-                    src="./src/assets/img/mbta.png"
-                    alt="CTR"
-                    class="rounded mb-4 w-full h-full object-cover"
-                  />
-                </div>
-                <h4 class="text-xl text-orange-400 mb-2">
-                  Boston MBTA Threat Detection and Deterrence
-                </h4>
-                <p class="italic">
-                  <strong>Python, PyTorch, TensorFlow, NetworkX, GIS</strong>
-                </p>
-                <div class="mt-5">
-                  <p class="nb-2">
-                    ❁ Developed a Graph Neural Network-based framework for
-                    analyzing and predicting vulnerabilities in urban rail
-                    transit, leveraging multi-source data and network science
-                    principles.
-                  </p>
-                  <p class="nb-2">
-                    ❁ Built a Python-based GUI for visualizing threat scores and
-                    simulating network failure scenarios, aiding stakeholders in
-                    resource allocation and resilience planning.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="projects_item rounded text-center">
-              <div class="my-2 p-2">
-                <div
-                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
-                >
-                  <img
-                    src="./src/assets/img/suicide.png"
-                    alt="CTR"
-                    class="rounded mb-4 w-full h-full object-cover"
-                  />
-                </div>
-                <h4 class="text-xl text-orange-400 mb-2">
-                  Suicide Risk Detection System Using Transformers and DL
-                  Techniques
-                </h4>
-                <p class="italic">
-                  <strong
-                    >Python, BERT, CNN, LSTM, Word2Vec, GloVe, Natural Language
-                    Processing</strong
-                  >
-                </p>
-                <div class="mt-5">
-                  <p class="nb-2">
-                    ❁ Built an NLP-based chatbot for detecting suicidal ideation
-                    in 232,074 Reddit posts using BERT, CNN, and LSTM models.
-                  </p>
-                  <p class="nb-2">
-                    ❁ Achieved an F1-Score of 96.85% using BERT with custom
-                    Word2Vec embeddings, effectively minimizing false negatives.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="projects_item rounded text-center">
-              <div class="my-2 p-2">
-                <div
-                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
-                >
-                  <img
-                    src="./src/assets/img/tifr.png"
-                    alt="CTR"
-                    class="rounded mb-4 w-full h-full object-cover"
-                  />
-                </div>
-                <h4 class="text-xl text-orange-400 mb-2">
-                  Electron Energy Prediction in CMS experiment at CERN
-                  (Switzerland)
-                </h4>
-                <p class="italic">
-                  <strong>Python, Pyorch, tensorflow</strong>
-                </p>
-                <div class="mt-5">
-                  <p class="nb-2">
-                    ❁ Led an innovative research project at Tata Institute of
-                    Fundamental Research in collaboration with CERN, utilizing
-                    Graph Neural Networks to forecast electron energy in
-                    Geneva's HGCAL Particle Accelerator.
-                  </p>
-                  <p class="nb-2">
-                    ❁ Achieved an RMSE value of 11.62 for precise electron
-                    energy predictions in particle physics.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="projects_item rounded text-center">
-              <div class="my-2 p-2">
-                <div
-                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
-                >
-                  <img
-                    src="./src/assets/img/summarization.png"
-                    alt="Text Summarization and Title Generation"
-                    class="rounded mb-4 w-full h-full object-cover"
-                  />
-                </div>
-                <h4 class="text-xl text-orange-400 mb-2">
-                  Text Summarization and Title Generation
-                </h4>
-                <p class="italic">
-                  <strong>Python, LSTM, Transformer, Seq2Seq, PEGASUS, NLP</strong>
-                </p>
-                <div class="mt-5">
-                  <p class="nb-2">
-                    ❁ Developed a text summarization system using LSTM and Transformer models, achieving ROUGE-1 score of 92.5% (Bi-LSTM).
-                  </p>
-                  <p class="nb-2">
-                    ❁ Implemented title generation using Seq2Seq with LSTM, achieving validation accuracy of 81.88%, generating coherent and context-aware titles.
-                  </p>
-                  <p class="nb-2">
-                    ❁ Conducted model evaluation using Amazon Fine Food Reviews and YouTube Video Titles datasets.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="projects_item rounded text-center">
-              <div class="my-2 p-2">
-                <div
-                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
-                >
-                  <img
-                    src="./src/assets/img/ctr.png"
-                    alt="CTR"
-                    class="rounded mb-4 w-full h-full object-cover"
-                  />
-                </div>
-                <h4 class="text-xl text-orange-400 mb-2">
-                  Click-through Rate (CTR) Prediction using Supervised Machine
-                  Learning Models
-                </h4>
-                <p class="italic">
-                  <strong
-                    >Python, Scikit-Learn, XGBoost, LightGBM, Random Forest,
-                    Decision Trees, Pandas</strong
-                  >
-                </p>
-                <div class="mt-5">
-                  <p class="nb-2">
-                    ❁ Enhanced CTR prediction accuracy, helping businesses
-                    experience remarkable growth, with improvements ranging from
-                    10% to 30% or even more, by implementing embedded one-hot
-                    encoding techniques.
-                  </p>
-                  <p class="nb-2">
-                    ❁ Conducted an exhaustive analysis and secured an F-1 score
-                    of 95% while evaluating XGBoost, Random Forest, LightGBM,
-                    and Decision Trees, empowering businesses to streamline
-                    attributes expenditure effectively.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="projects_item rounded text-center">
-              <div class="my-2 p-2">
-                <div
-                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
-                >
-                  <img
-                    src="./src/assets/img/spotify.png"
-                    alt="CTR"
-                    class="rounded mb-4 w-full h-full object-cover"
-                  />
-                </div>
-                <h4 class="text-xl text-orange-400 mb-2">
-                  Storytelling with Data (Spotify), Data Analysis Interface
-                </h4>
-                <p class="italic">
-                  <strong>Tableau, SQL, Python, Data Visualization</strong>
-                </p>
-                <div class="mt-5">
-                  <p class="nb-2">
-                    ❁ Analyzed the user base of Spotify in a particular country
-                    and represented that data on a map using Tableau.
-                  </p>
-                  <p class="nb-2">
-                    ❁ Derived logical conclusions that could help Spotify
-                    increase its user base using curated ads.
-                  </p>
-                </div>
-              </div>
+            <h4 class="text-xl text-orange-400 mb-2 group-hover:underline transition-all duration-300">45 Urban Metros Resilience Analysis</h4>
+            <p class="italic"><strong>Python, NetworkX, Graph Theory, MatplotLib</strong></p>
+            <div class="mt-5">
+              <p>❁ Conducted resilience analysis of 45 global urban metro networks, identifying key structural attributes influencing network robustness and recovery.</p>
+              <p>❁ Developed an interpretable, computationally efficient resilience modeling approach leveraging various centralities enabling rapid assessment of network vulnerabilities.</p>
             </div>
           </div>
         </div>
-        <!-- </div> -->
-      </section>
+      </a>
+
+      <!-- 2 -->
+      <a href="https://github.com/orijeet100/" target="_blank" class="block">
+        <div class="projects_item group rounded text-center transition-all duration-300 hover:cursor-pointer">
+          <div class="my-2 p-2">
+            <div class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4 transform transition-transform duration-300 group-hover:scale-110">
+              <img src="./src/assets/img/gun_detection.png" alt="Gun Detection" class="w-full h-full object-cover" />
+            </div>
+            <h4 class="text-xl text-orange-400 mb-2 group-hover:underline transition-all duration-300">Weapon Detection System using Computer Vision</h4>
+            <p class="italic"><strong>Python, YOLOv8, OpenCV, Twilio, Numpy, PIL</strong></p>
+            <div class="mt-5">
+              <p>❁ Developed a real-time weapon detection framework using YOLOv8 and OpenCV with 91% accuracy.</p>
+              <p>❁ Integrated WhatsApp alerts via Twilio for faster response times.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3 -->
+      <a href="https://github.com/orijeet100/" target="_blank" class="block">
+        <div class="projects_item group rounded text-center transition-all duration-300 hover:cursor-pointer">
+          <div class="my-2 p-2">
+            <div class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4 transform transition-transform duration-300 group-hover:scale-110">
+              <img src="./src/assets/img/documind.png" alt="DocuFind.ai" class="w-full h-full object-cover" />
+            </div>
+            <h4 class="text-xl text-orange-400 mb-2 group-hover:underline transition-all duration-300">DocuFind.ai – QA System</h4>
+            <p class="italic"><strong>Python, FireCrawl, FAISS, Transformers, Streamlit</strong></p>
+            <div class="mt-5">
+              <p>❁ Built a RAG-based system for document & web QA using FAISS & MiniLM, achieving 83.3% accuracy.</p>
+              <p>❁ Deployed real-time Streamlit UI for interactive querying.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4 -->
+      <a href="https://github.com/orijeet100/" target="_blank" class="block">
+        <div class="projects_item group rounded text-center transition-all duration-300 hover:cursor-pointer">
+          <div class="my-2 p-2">
+            <div class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4 transform transition-transform duration-300 group-hover:scale-110">
+              <img src="./src/assets/img/mbta.png" alt="MBTA Threat Detection" class="w-full h-full object-cover" />
+            </div>
+            <h4 class="text-xl text-orange-400 mb-2 group-hover:underline transition-all duration-300">Boston MBTA Threat Detection</h4>
+            <p class="italic"><strong>Python, PyTorch, TensorFlow, NetworkX</strong></p>
+            <div class="mt-5">
+              <p>❁ Designed GNN-based threat scoring system for urban transit networks.</p>
+              <p>❁ Built interactive GUI for failure simulations & mitigation strategies.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5 -->
+      <a href="https://github.com/orijeet100/" target="_blank" class="block">
+        <div class="projects_item group rounded text-center transition-all duration-300 hover:cursor-pointer">
+          <div class="my-2 p-2">
+            <div class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4 transform transition-transform duration-300 group-hover:scale-110">
+              <img src="./src/assets/img/suicide.png" alt="Suicide Detection" class="w-full h-full object-cover" />
+            </div>
+            <h4 class="text-xl text-orange-400 mb-2 group-hover:underline transition-all duration-300">Suicide Risk Detection via Transformers</h4>
+            <p class="italic"><strong>Python, BERT, CNN, LSTM, NLP</strong></p>
+            <div class="mt-5">
+              <p>❁ Detected suicidal ideation in 232k+ Reddit posts with 96.85% F1-Score using BERT & Word2Vec.</p>
+              <p>❁ Built a chatbot for early intervention suggestions.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6 -->
+      <a href="https://github.com/orijeet100/" target="_blank" class="block">
+        <div class="projects_item group rounded text-center transition-all duration-300 hover:cursor-pointer">
+          <div class="my-2 p-2">
+            <div class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4 transform transition-transform duration-300 group-hover:scale-110">
+              <img src="./src/assets/img/tifr.png" alt="CMS Electron Prediction" class="w-full h-full object-cover" />
+            </div>
+            <h4 class="text-xl text-orange-400 mb-2 group-hover:underline transition-all duration-300">Electron Energy Prediction @ CERN</h4>
+            <p class="italic"><strong>Python, PyTorch, TensorFlow</strong></p>
+            <div class="mt-5">
+              <p>❁ Used GNNs to predict electron energy in CMS HGCAL experiments, achieving RMSE of 11.62.</p>
+              <p>❁ Research conducted at TIFR in collaboration with CERN.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7 -->
+      <a href="https://github.com/orijeet100/" target="_blank" class="block">
+        <div class="projects_item group rounded text-center transition-all duration-300 hover:cursor-pointer">
+          <div class="my-2 p-2">
+            <div class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4 transform transition-transform duration-300 group-hover:scale-110">
+              <img src="./src/assets/img/summarization.png" alt="Summarization" class="w-full h-full object-cover" />
+            </div>
+            <h4 class="text-xl text-orange-400 mb-2 group-hover:underline transition-all duration-300">Text Summarization & Title Generation</h4>
+            <p class="italic"><strong>Python, LSTM, Transformer, Seq2Seq, PEGASUS</strong></p>
+            <div class="mt-5">
+              <p>❁ Built summarization models with Bi-LSTM (92.5% ROUGE) and PEGASUS.</p>
+              <p>❁ Implemented LSTM-based title generator with 81.88% validation accuracy.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 8 -->
+      <a href="https://github.com/orijeet100/" target="_blank" class="block">
+        <div class="projects_item group rounded text-center transition-all duration-300 hover:cursor-pointer">
+          <div class="my-2 p-2">
+            <div class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4 transform transition-transform duration-300 group-hover:scale-110">
+              <img src="./src/assets/img/ctr.png" alt="CTR Prediction" class="w-full h-full object-cover" />
+            </div>
+            <h4 class="text-xl text-orange-400 mb-2 group-hover:underline transition-all duration-300">CTR Prediction with ML Models</h4>
+            <p class="italic"><strong>Python, XGBoost, LightGBM, Random Forest</strong></p>
+            <div class="mt-5">
+              <p>❁ Achieved 95% F1-score using ensemble tree models for CTR prediction.</p>
+              <p>❁ Boosted ad efficiency by 10–30% using one-hot encoding optimizations.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 9 -->
+      <a href="https://github.com/orijeet100/" target="_blank" class="block">
+        <div class="projects_item group rounded text-center transition-all duration-300 hover:cursor-pointer">
+          <div class="my-2 p-2">
+            <div class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4 transform transition-transform duration-300 group-hover:scale-110">
+              <img src="./src/assets/img/spotify.png" alt="Spotify Data Storytelling" class="w-full h-full object-cover" />
+            </div>
+            <h4 class="text-xl text-orange-400 mb-2 group-hover:underline transition-all duration-300">Storytelling with Spotify Data</h4>
+            <p class="italic"><strong>Tableau, SQL, Python</strong></p>
+            <div class="mt-5">
+              <p>❁ Visualized Spotify users by country and demographics in Tableau.</p>
+              <p>❁ Proposed regional ad strategies based on analytical insights.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 
       <!-- /Projets ends -->
 
@@ -1121,37 +982,43 @@
           class="container mx-auto bg-black/0.50 backdrop-blur-md px-4 py-12 rounded"
         >
           <h2 class="text-3xl font-bold mb-16">Publications</h2>
-          <p class="mb-2">
+          <p class="mb-8">
             ❁ Authored "<strong
               >Resilience of Urban Rail Networks Depend on Mesoscale and
               Connectivity Attributes</strong
             >", currently under review for publication at Nature Cities.
           </p>
-          <p class="mb-2">
-            ❁ Co-authored "Rail System Threat Analysis" to Risk Analysis for
+          <p class="mb-8">
+            ❁ Co-authored "<strong
+            >Rail System Threat Analysis</strong
+            >" to Risk Analysis for
             submitting it for peer review.
           </p>
-          <p class="mb-2">
+          <p class="mb-8">
             ❁ Co-authored a paper called "<strong
               >A Network Perspective Can Deter Threats to Soft Infrastructure
               Targets</strong
             >" as a Comment to Nature Computational Science.
           </p>
-          <p class="mb-2">
-            ❁ Published "CTR Prediction of Advertisements using Decision
-            Trees-Based Algorithms" in Isemantic, IEEE, October 2022.DOI:
-            <a href="https://doi.org/10.1109/iSemantic55962.2022.9920363">
-              10.1109/iSemantic55962.2022.9920363
-            </a>
-          </p>
-          <p class="mb-2">
-            ❁ Published "Electron Energy Prediction in High-Granularity
-            Calorimeter of the CMS Detector Using Graph Neural Network" in
+          <p class="mb-8"></p>
+            ❁ Published "<strong
+            >Electron Energy Prediction in High-Granularity
+            Calorimeter of the CMS Detector Using Graph Neural Network</strong>" in
             ICT4SD 2024, Springer LNNS. DOI:
             <a href="https://doi.org/10.1007/978-981-97-8591-9_48"
               >https://doi.org/10.1007/978-981-97-8591-9_48</a
             >
           </p>
+          <p class="mb-8">
+            ❁ Published "<strong
+            >CTR Prediction of Advertisements using Decision
+            Trees-Based Algorithms</strong
+            >" in Isemantic, IEEE, October 2022.DOI:
+            <a href="https://doi.org/10.1109/iSemantic55962.2022.9920363">
+              10.1109/iSemantic55962.2022.9920363
+            </a>
+          </p>
+          
         </div>
       </section>
 
@@ -1210,7 +1077,7 @@
               </div>
             </div>
             <!-- Download Resume -->
-            <div class="flex gap-2 w-full md:w-1/3 items-center">
+            <div class="flex gap-4 w-full md:w-1/3 items-center"> 
               <div class="bg-orange-400 w-[60px] h-[60px] rounded-full flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                   class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
@@ -1222,7 +1089,7 @@
               </div>
               <a href="./src/assets/Orijeet _Mukherjee_Resume.pdf"
                 download
-                class="inline-block px-4 py-2 text-sm font-semibold bg-orange-400 text-white rounded hover:bg-orange-500 transition">
+                class="inline-block px-4 py-2 text-sm font-semibold bg-orange-400 text-white rounded hover:bg-orange-200 transition">
                 Download Resume
               </a>
             </div>

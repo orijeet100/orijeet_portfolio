@@ -350,3 +350,8 @@ footer {
 a {
   transition: all 0.3s ease-in-out;
 }
+
+
+.projects_item:hover h4 {
+  text-decoration: underline;
+}
