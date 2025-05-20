@@ -1,0 +1,352 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("../img/bg-1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll !important;
+  }
+}
+
+
+.projects_item {
+  border: 1px solid #333;
+}
+.slick-initialized .slick-slide {
+  margin: 0 10px;
+}
+.projects_item .img {
+  overflow: hidden;
+  position: relative;
+  height: 280px;
+}
+
+.projects_item .img img {
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.projects_item .img:hover img {
+  transform: scale(1.2);
+  opacity: 0.4;
+}
+
+.projects_item .img svg {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  transform: translate(-50%, -50%);
+}
+.projects_item .img:hover svg {
+  display: block;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  background-color: #ff5733 !important;
+  color: transparent;
+}
+
+.slick-dots li button:before {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  color: transparent;
+}
+
+/* Button styling */
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background: #dddddd00;
+  transition: 0.3s;
+  border: 2px solid #333;
+}
+
+/* Active button style */
+.filter-btn.active {
+  background: orange;
+  color: white;
+}
+
+/* Grid of items */
+
+.item {
+  border-radius: 5px;
+  display: none;
+}
+
+/* Show when active */
+.item.show {
+  display: block;
+}
+
+.skill {
+  margin: 20px 0;
+}
+.progress {
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #00bcd4;
+  transition: width 1.5s ease-in-out;
+}
+
+.skill-name {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.ml {
+  background-color: #ff5733;
+}
+.dev {
+  background-color: #008cba;
+}
+.lang {
+  background-color: #f7df1e;
+}
+.tools {
+  background-color: #28d614;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 10px 0px;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.3s, text-decoration 0.3s;
+}
+.nav-link.active {
+  border-bottom: 2px solid rgb(255, 148, 71);
+  color: rgb(255, 148, 71);
+}
+.nav-link:hover {
+  color: rgb(255, 148, 71);
+}
+
+/*  */
+
+.nav_btn {
+  cursor: pointer;
+  display: none;
+}
+.menu_item {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .nav_btn.open.active {
+    display: block;
+  }
+  .nav_btn.close.active {
+    display: block;
+  }
+  .nav_btn.open {
+    display: none;
+  }
+  .menu_item {
+    display: none;
+  }
+  .menu_item.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.logo {
+  font-family: "Playwrite HU", cursive;
+}
+
+#publications a {
+  text-decoration: underline;
+}
+
+/* Spinner style */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #1a1a1a;
+  border-top: 6px solid #df8235;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Slightly Increased Section Spacing */
+section {
+  margin-top: 2rem !important; /* Slightly more vertical margin */
+  margin-bottom: 2rem !important;
+  padding-top: 2.5rem !important; /* Slightly more padding */
+  padding-bottom: 2.5rem !important;
+}
+
+/* Fine-tuned Spacing for Containers */
+section > div {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* Adjusting spacing for project slider */
+.project_slider {
+  margin-bottom: 2.5rem !important; /* Slightly more margin at the bottom */
+}
+
+/* Adjusting heading spacing */
+section h2 {
+  font-size: 3rem !important; /* Increase to 3rem (48px) */
+  font-weight: 700 !important; /* Make it bold for better visibility */
+  text-transform: uppercase;   /* Make titles uppercase for emphasis (optional) */
+  letter-spacing: 1.5px;       /* Slight letter spacing for clarity */
+}
+
+/* Adjusting paragraph spacing */
+section p {
+  margin-bottom: 0.75rem !important; /* Slightly more paragraph spacing */
+}
+
+/* Adjusting Skills Section */
+.skill {
+  margin: 15px 0; /* Slightly more skill spacing */
+}
+
+.progress {
+  margin: 6px 0 !important; /* Slightly more skill bar spacing */
+}
+
+/* Adjusting Navbar Link Spacing */
+.nav-link {
+  padding: 10px 0px !important; /* Slightly more navbar link padding */
+}
+
+/* Adjusting Project Item Spacing */
+.projects_item {
+  margin-bottom: 2rem !important; /* Slightly more project item gap */
+}
+
+/* Footer Padding */
+footer {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+/* Resume Section Title Style */
+#resume h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ff5733;
+  margin-bottom: 20px;
+}
+
+/* Orange Download Button Style */
+.download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff5733;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.download-btn:hover {
+  background-color: #e04e2e;
+  text-decoration: none;
+}
+
+
+/* Updated Button Style */
+.resume-download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff5733;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.resume-download-btn:hover {
+  background-color: #e04e2e;
+  text-decoration: none;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}

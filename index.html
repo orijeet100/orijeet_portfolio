@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORIJEET MUKHERJEE</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- slick cdns -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./src/assets/css/input.css" />
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white">
+    <div
+      id="preloader"
+      class="fixed inset-0 bg-black z-100 flex items-center justify-center"
+    >
+      <div class="loader"></div>
+    </div>
+
+    <div id="main-content" class="opacity-0">
+      <!-- navbar -->
+      <nav class="sticky top-0 bg-black/50 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between md:items-center py-4">
+            <h1 class="font-bold text-white logo text-xl">
+              <a href="./index.html">ORIJEET</a>
+            </h1>
+            <div class="flex flex-col">
+              <div class="open nav_btn active">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                  />
+                </svg>
+              </div>
+
+              <div class="close nav_btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-x-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                  />
+                </svg>
+              </div>
+
+              <div class="gap-4 menu_item">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner starts -->
+      <div class="container mx-auto px-4 banner">
+        <section class="h-screen flex items-center">
+          <div
+            class="flex flex-col justify-center w-full items-center"
+            data-aos="zoom-in"
+          >
+            <h1 class="text-3xl md:text-7xl font-bold text-center">
+              ORIJEET MUKHERJEE
+            </h1>
+
+            <div class="text-xl md:text-3xl text-center flex">
+              <p class="mr-2">I work as a</p>
+              <span id="element" class="text-orange-400 font-bold"></span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- /banner ends -->
+      <!-- about starts -->
+      <section
+        id="about"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="py-12"
+      >
+        <div
+          class="container mx-auto bg-black/0.50 backdrop-blur-md px-4 py-12 rounded"
+        >
+          <div class="flex gap-8 justify-between flex-col md:flex-row w-full">
+            <div
+              class="flex gap-8 items-center justify-between flex-col md:flex-row"
+            >
+              <div class="w-full md:w-1/3">
+                <img
+                  src="./src/assets/img/profile.jpeg"
+                  alt=""
+                  class="w-full rounded-full"
+                />
+              </div>
+              <div class="w-full md:w-2/3">
+                <h2 class="text-3xl font-bold mb-16">About</h2>
+                <p class="mb-4">
+                  I am a versatile Machine Learning Engineer with extensive research experience and a proven track record in 
+                  both startups and large organizations. 
+                  My journey spans cutting-edge research at Northeastern University and Tata Institute of Fundamental Research, 
+                  where I tackled complex problems in urban resilience, healthcare analytics, and particle physics. In parallel, 
+                  I have thrived in fast-paced startup environments, designing scalable AI solutions for real-world impact. 
+                  My experience spans diverse domains, from developing predictive health models for Apriqot to analyzing the resilience of global urban metro networks 
+                  and pioneering intelligent question-answering systems. I excel at 
+                  transforming complex data into actionable insights, leveraging deep learning, 
+                  natural language processing, and network science. Driven by a commitment to innovation and impact, 
+                  I aim to continue developing cutting-edge AI solutions that drive meaningful outcomes for organizations and communities.
+                </p>
+
+                <p class="flex items-center gap-1">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="orange"
+                      class="bi bi-caret-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+                      /></svg></span
+                  ><strong>Phone</strong>: +1 (617) 516-9182
+                </p>
+                <p class="flex items-center gap-1">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="orange"
+                      class="bi bi-caret-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+                      /></svg></span
+                  ><strong>Mail</strong>: mukherjee.o@northeastern.edu
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /about ends -->
+
+      <!-- skills starts -->
+
+      <section
+      id="skills"
+      class="my-20 py-12"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div
+        class="container mx-auto bg-black/0.50 backdrop-blur-md px-4 py-12 rounded"
+      >
+        <h2 class="text-3xl font-bold mb-16">Technical Skills</h2>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Data Science and Machine Learning -->
+          <div class="w-full">
+            <h3 class="text-2xl">Data Science and Machine Learning</h3>
+            <div class="skill">
+              <div class="skill-name">OpenCV</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">GNNs (Graph Neural Networks)</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="88"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Transformers</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">NetworkX</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Pytorch</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="92"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">TensorFlow</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="89"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">LLMs</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">ML Flow</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">ArcGIS</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="82"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Pandas</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Neural Networks</div>
+              <div class="progress">
+                <div class="progress-bar ml" data-skill="90"></div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Programming Languages -->
+          <div class="w-full">
+            <h3 class="text-2xl">Programming Languages</h3>
+            <div class="skill">
+              <div class="skill-name">Python</div>
+              <div class="progress">
+                <div class="progress-bar lang" data-skill="92"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">R</div>
+              <div class="progress">
+                <div class="progress-bar lang" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Java</div>
+              <div class="progress">
+                <div class="progress-bar lang" data-skill="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">C/C++</div>
+              <div class="progress">
+                <div class="progress-bar lang" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">SQL</div>
+              <div class="progress">
+                <div class="progress-bar lang" data-skill="78"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Dart</div>
+              <div class="progress">
+                <div class="progress-bar lang" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Bash</div>
+              <div class="progress">
+                <div class="progress-bar lang" data-skill="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Git</div>
+              <div class="progress">
+                <div class="progress-bar lang" data-skill="84"></div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Infrastructure and Tools -->
+          <div class="w-full">
+            <h3 class="text-2xl">Infrastructure and Tools</h3>
+            <div class="skill">
+              <div class="skill-name">MySQL</div>
+              <div class="progress">
+                <div class="progress-bar tools" data-skill="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">MongoDB</div>
+              <div class="progress">
+                <div class="progress-bar tools" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">AWS</div>
+              <div class="progress">
+                <div class="progress-bar tools" data-skill="89"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">GCP</div>
+              <div class="progress">
+                <div class="progress-bar tools" data-skill="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Kubernetes</div>
+              <div class="progress">
+                <div class="progress-bar tools" data-skill="82"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Docker</div>
+              <div class="progress">
+                <div class="progress-bar tools" data-skill="79"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Power BI</div>
+              <div class="progress">
+                <div class="progress-bar tools" data-skill="84"></div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Web/Desktop Development -->
+          <div class="w-full">
+            <h3 class="text-2xl">Web/Desktop Development</h3>
+            <div class="skill">
+              <div class="skill-name">HTML</div>
+              <div class="progress">
+                <div class="progress-bar dev" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">CSS</div>
+              <div class="progress">
+                <div class="progress-bar dev" data-skill="89"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">JavaScript</div>
+              <div class="progress">
+                <div class="progress-bar dev" data-skill="90"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">Django</div>
+              <div class="progress">
+                <div class="progress-bar dev" data-skill="80"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">Flask</div>
+              <div class="progress">
+                <div class="progress-bar dev" data-skill="80"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">NodeJS</div>
+              <div class="progress">
+                <div class="progress-bar dev" data-skill="85"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">ReactJS</div>
+              <div class="progress">
+                <div class="progress-bar dev" data-skill="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+      <!-- /skills ends -->
+      <!-- experience starts -->
+      <section
+        id="experience"
+        class="my-20 py-12"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="container mx-auto bg-black/0.50 backdrop-blur-md px-4 py-12 rounded"
+        >
+          <h2 class="text-3xl font-bold mb-16">Professional Experience</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="w-full">
+              <div class="flex gap-4 mb-3">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="rounded-full w-[15px] h-[15px] bg-orange-400 mt-1"
+                  ></div>
+                  <div
+                    class="rounded-full w-[3px] h-full bg-orange-400 mt-1"
+                  ></div>
+                </div>
+                <div class="w-[95%]">
+                  <p class="text-lg text-orange-400 font-bold mb-2">
+                    Machine Learning Engineer Co-op
+                  </p>
+                  <span class="bg-gray-700 p-2 text-white"
+                    >July 2024-Jan 2025</span
+                  >
+                  <p class="italic mt-2">Appriqot, Portland, ME</p>
+                  <div class="mt-5">
+                    <p>
+                      ❁ Engineered Developing a
+                      <strong
+                        >Disease based and Food insecurity predictive
+                        models</strong
+                      >
+                      to produce geographically and demographically downscaled
+                      population health estimates.
+                    </p>
+                    <p>
+                      ❁ Leveraged
+                      <strong
+                        >agent-based modeling and small area estimation to
+                        derive precise health indicators</strong
+                      >, which empower key
+                      <strong>healthcare stakeholders</strong>, such as
+                      <strong>MaineCDC</strong>
+                      and <strong>MaineHealth</strong>, to make major strategic
+                      decisions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex gap-4 mb-3">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="rounded-full w-[15px] h-[15px] bg-orange-400 mt-1"
+                  ></div>
+                  <div
+                    class="rounded-full w-[3px] h-full bg-orange-400 mt-1"
+                  ></div>
+                </div>
+                <div class="w-[95%]">
+                  <p class="text-lg text-orange-400 font-bold mb-2">
+                    Data Science Research Assistant
+                  </p>
+                  <span class="bg-gray-700 p-2 text-white"
+                    >Jan 2024-Present</span
+                  >
+                  <p class="italic mt-2">
+                    Institute for Experiential AI, Boston, MA
+                  </p>
+                  <div class="mt-5">
+                    <p>
+                      ❁ Developing a comprehensive framework for integrating
+                      deep learning models with Boston urban infrastructure
+                      (MBTA) and strategies for disaster response, Funded by
+                      Department of Homeland Security.
+                    </p>
+                    <p>
+                      ❁ Conducted resilience analysis of 45 global urban metro
+                      networks using a topology-driven framework, identifying
+                      key structural attributes that influence network
+                      robustness and recovery with a computationally efficient
+                      resilience modeling approach.
+                    </p>
+                    <p>
+                      ❁
+                      <strong
+                        >Improving reliability of resilient systems by
+                        25%</strong
+                      >
+                      by creating
+                      <strong>efficient GNNs and Transformers</strong> by
+                      capturing both temporal dynamics and spatial complexities
+                      in urban transportation networks and infrastructure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex gap-4 mb-3">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="rounded-full w-[15px] h-[15px] bg-orange-400 mt-1"
+                  ></div>
+                  <div
+                    class="rounded-full w-[3px] h-full bg-orange-400 mt-1"
+                  ></div>
+                </div>
+                <div class="w-[95%]">
+                  <p class="text-lg text-orange-400 font-bold mb-2">
+                    Machine Learning Researcher
+                  </p>
+                  <span class="bg-gray-700 p-2 text-white"
+                    >August 2022-July 2023</span
+                  >
+                  <p class="italic mt-2">
+                    Tata Institute of Fundamental Research (TIFR), Mumbai, India
+                  </p>
+                  <div class="mt-5">
+                    <p>
+                      ❁ Initiated a cross-disciplinary project to integrate
+                      advanced graph-based machine learning methods with
+                      particle physics research, significantly advancing the
+                      computational analysis of subatomic phenomena.
+                    </p>
+                    <p>
+                      ❁ Constructed a regression model based on Graph Neural
+                      Networks (GNNs) to capture intricate relationships within
+                      electron trajectories to predict electron energies with
+                      remarkable RMSE value of 11.62
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex gap-4 mb-3">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="rounded-full w-[15px] h-[15px] bg-orange-400 mt-1"
+                  ></div>
+                  <div
+                    class="rounded-full w-[3px] h-full bg-orange-400 mt-1"
+                  ></div>
+                </div>
+                <div class="w-[95%]">
+                  <p class="text-lg text-orange-400 font-bold mb-2">
+                    Software Developer Intern
+                  </p>
+                  <span class="bg-gray-700 p-2 text-white"
+                    >April 2022– October 2022</span
+                  >
+                  <p class="italic mt-2">ViaTech Media, Mumbai, India</p>
+                  <div class="mt-5">
+                    <p>
+                      ❁ Carried out testing for applications of a restaurant,
+                      salon, and local businesses for clients. Led a newly
+                      formed unit to improvise existing testing framework using
+                      Java, Python, and microservices architecture resulting in
+                      higher customer satisfaction and increasing test suite.
+                    </p>
+                    <p>
+                      ❁ Designed several components using UI structure, fast
+                      state management, and the latest packages and modules of
+                      Flutter for applications and websites of the clients in
+                      the backend which ensured the smooth and flawless
+                      functioning of the platform.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex gap-4 mb-3">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="rounded-full w-[15px] h-[15px] bg-orange-400 mt-1"
+                  ></div>
+                  <div
+                    class="rounded-full w-[3px] h-full bg-orange-400 mt-1"
+                  ></div>
+                </div>
+                <div class="w-[95%]">
+                  <p class="text-lg text-orange-400 font-bold mb-2">
+                    Application Developer Intern
+                  </p>
+                  <span class="bg-gray-700 p-2 text-white"
+                    >January 2022-March 2022</span
+                  >
+                  <p class="italic mt-2">Matchbuddy, Bangalore, India</p>
+                  <div class="mt-5">
+                    <p>
+                      ❁ Appended features for data storing and displaying in
+                      Matchbuddy’s official application, for an efficient
+                      match-making process using Firebase and its packages.
+                    </p>
+                    <p>
+                      ❁ Incorporated changes in the UI of their application on a
+                      daily basis using technologies such as FlutterFlow and
+                      Figma.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex gap-4 mb-3">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="rounded-full w-[15px] h-[15px] bg-orange-400 mt-1"
+                  ></div>
+                  <div
+                    class="rounded-full w-[3px] h-full bg-orange-400 mt-1"
+                  ></div>
+                </div>
+                <div class="w-[95%]">
+                  <p class="text-lg text-orange-400 font-bold mb-2">
+                    Software Developer Intern
+                  </p>
+                  <span class="bg-gray-700 p-2 text-white"
+                    >December 2021-January 2022</span
+                  >
+                  <p class="italic mt-2">TechShots, Delhi, India</p>
+                  <div class="mt-5">
+                    <p>
+                      ❁ Leveraged Firebase, PHP, and Flutter technologies to
+                      drive meaningful enhancements in the TechShots app's
+                      Firebase database, ensuring optimal performance, and
+                      revolutionizing the frontend design for an enriched user
+                      experience.
+                    </p>
+                    <p>
+                      ❁ Spearheaded the enhancement of the TechShots app’s
+                      performance and visual appeal, contributing to a
+                      significant increase in user engagement and retention on
+                      various platforms like Playstore and App Store.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex gap-4 mb-3">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="rounded-full w-[15px] h-[15px] bg-orange-400 mt-1"
+                  ></div>
+                  <div
+                    class="rounded-full w-[3px] h-full bg-orange-400 mt-1"
+                  ></div>
+                </div>
+                <div class="w-[95%]">
+                  <p class="text-lg text-orange-400 font-bold mb-2">
+                    Software Developer Intern
+                  </p>
+                  <span class="bg-gray-700 p-2 text-white"
+                    >November 2021–December 2021</span
+                  >
+                  <p class="italic mt-2">AIM2EXCEL, Haryana, India</p>
+                  <div class="mt-5">
+                    <p>
+                      ❁ Transformed the News bank and e-commerce applications at
+                      AIM2EXCEL by introducing innovative features like offline
+                      bookmarks and seamless data streaming, elevating the user
+                      experience and optimizing website UI/UX using Flutter web,
+                      impacting client satisfaction.
+                    </p>
+                    <p>
+                      ❁ Pioneered groundbreaking enhancements in the News bank
+                      and e-commerce applications at AIM2EXCEL, weaving together
+                      the magic of Flutter web to create a user-centric digital
+                      oasis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /experience ends -->
+      <!-- education starts -->
+      <section
+        id="education"
+        class="my-20 py-12"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="container mx-auto bg-black/0.50 backdrop-blur-md px-4 py-12 rounded"
+        >
+          <h2 class="text-3xl font-bold mb-16">Education</h2>
+
+          <div class="flex gap-8 justify-between flex-col md:flex-row">
+            <div class="w-full md:w-1/2">
+              <div class="flex gap-4 mb-3">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="rounded-full w-[15px] h-[15px] bg-orange-400 mt-1"
+                  ></div>
+                  <div
+                    class="rounded-full w-[3px] h-full bg-orange-400 mt-1"
+                  ></div>
+                </div>
+                <div class="w-[95%]">
+                  <p class="text-lg text-orange-400 font-bold mb-2">
+                    Northeastern University, Boston, MA
+                  </p>
+                  <div class="flex gap-2">
+                    <span class="bg-gray-700 p-2 text-white"
+                      >August 2023-Dec 2025</span
+                    >
+                    <span class="bg-gray-700 p-2 text-white">GPA 3.8/4</span>
+                  </div>
+                  <p class="italic mt-2">
+                    Masters of Science in Computer Science (GPA 3.8/4) Relevant
+                    Coursework: Large Language Models, Computer Vision, Data
+                    Mining, Database Systems
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <div class="flex gap-4 mb-3">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="rounded-full w-[15px] h-[15px] bg-orange-400 mt-1"
+                  ></div>
+                  <div
+                    class="rounded-full w-[3px] h-full bg-orange-400 mt-1"
+                  ></div>
+                </div>
+                <div class="w-[95%]">
+                  <p class="text-lg text-orange-400 font-bold mb-2">
+                    University of Mumbai, Mumbai, India
+                  </p>
+                  <div class="flex gap-2">
+                    <span class="bg-gray-700 p-2 text-white"
+                      >August 2019-May 2023</span
+                    >
+                    <span class="bg-gray-700 p-2 text-white">GPA 9.3/10</span>
+                  </div>
+                  <p class="italic mt-2">
+                    Bachelor of Engineering in Computer Engineering
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /education ends -->
+      <!-- Projets starts -->
+      <section
+        id="projects"
+        class="my-20 py-12"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="container mx-auto bg-black/0.50 backdrop-blur-md px-4 py-12 rounded"
+        >
+          <h2 class="text-3xl font-bold mb-16">Research and Academic Projets</h2>
+
+          <div class="project_slider">
+            <div class="projects_item rounded text-center">
+              <div class="my-2 p-2">
+                <div
+                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
+                >
+                  <img
+                    src="./src/assets/img/45_networks.png"
+                    alt="CTR"
+                    class="rounded mb-4 w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-xl text-orange-400 mb-2">
+                  45 Urban Metros Resilience Analysis
+                </h4>
+                <p class="italic">
+                  <strong>Python, NetworkX, Graph Theory, MatplotLib</strong>
+                </p>
+                <div class="mt-5">
+                  <p class="nb-2">
+                    ❁ Conducted resilience analysis of 45 global urban metro
+                    networks, identifying key structural attributes influencing
+                    network robustness and recovery.
+                  </p>
+                  <p class="nb-2">
+                    ❁ Developed an interpretable, computationally efficient
+                    resilience modeling approach leveraging various centralities
+                    enabling rapid assessment of network vulnerabilities without
+                    reliance on data-heavy simulations.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projects_item rounded text-center">
+              <div class="my-2 p-2">
+                <div
+                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
+                >
+                  <img
+                    src="./src/assets/img/gun_detection.png"
+                    alt="CTR"
+                    class="rounded mb-4 w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-xl text-orange-400 mb-2">
+                  Weapon Detection System using Computer Vision
+                </h4>
+                <p class="italic">
+                  <strong>Python, YOLOv8, OpenCV, Twilio, Numpy, PIL</strong>
+                </p>
+                <div class="mt-5">
+                  <p class="nb-2">
+                    ❁ Gained 91% accuracy rate while developing a Real-time
+                    Weapon Detection framework using YOLOv8 and OpenCV,
+                    successfully detecting firearms in closed environments.
+                  </p>
+                  <p class="nb-2">
+                    ❁ Integrated WhatsApp alert system to send immediate alerts
+                    upon gun detection, enhancing response times.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projects_item rounded text-center">
+              <div class="my-2 p-2">
+                <div
+                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
+                >
+                  <img
+                    src="./src/assets/img/documind.png"
+                    alt="CTR"
+                    class="rounded mb-4 w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-xl text-orange-400 mb-2">
+                  DocuFind.ai – A Document and Website Question Answering System
+                </h4>
+                <p class="italic">
+                  <strong
+                    >Python, FireCrawl, FAISS, Hugging Face Transformers,
+                    Streamlit, PyTorch, LangChain</strong
+                  >
+                </p>
+                <div class="mt-5">
+                  <p class="nb-2">
+                    ❁ Developed a Retrieval-Augmented Generation (RAG) system
+                    for document and web question answering using FAISS, Hugging
+                    Face Transformers (MiniLM), and FireCrawl, achieving 83.3%
+                    accuracy in multi-document query retrieval.
+                  </p>
+                  <p class="nb-2">
+                    ❁ Engineered a scalable vector search with FAISS and
+                    Llama-3.2-1B-Instruct, enabling real-time QA via Streamlit
+                    Frontend Interface.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projects_item rounded text-center">
+              <div class="my-2 p-2">
+                <div
+                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
+                >
+                  <img
+                    src="./src/assets/img/mbta.png"
+                    alt="CTR"
+                    class="rounded mb-4 w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-xl text-orange-400 mb-2">
+                  Boston MBTA Threat Detection and Deterrence
+                </h4>
+                <p class="italic">
+                  <strong>Python, PyTorch, TensorFlow, NetworkX, GIS</strong>
+                </p>
+                <div class="mt-5">
+                  <p class="nb-2">
+                    ❁ Developed a Graph Neural Network-based framework for
+                    analyzing and predicting vulnerabilities in urban rail
+                    transit, leveraging multi-source data and network science
+                    principles.
+                  </p>
+                  <p class="nb-2">
+                    ❁ Built a Python-based GUI for visualizing threat scores and
+                    simulating network failure scenarios, aiding stakeholders in
+                    resource allocation and resilience planning.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projects_item rounded text-center">
+              <div class="my-2 p-2">
+                <div
+                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
+                >
+                  <img
+                    src="./src/assets/img/suicide.png"
+                    alt="CTR"
+                    class="rounded mb-4 w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-xl text-orange-400 mb-2">
+                  Suicide Risk Detection System Using Transformers and DL
+                  Techniques
+                </h4>
+                <p class="italic">
+                  <strong
+                    >Python, BERT, CNN, LSTM, Word2Vec, GloVe, Natural Language
+                    Processing</strong
+                  >
+                </p>
+                <div class="mt-5">
+                  <p class="nb-2">
+                    ❁ Built an NLP-based chatbot for detecting suicidal ideation
+                    in 232,074 Reddit posts using BERT, CNN, and LSTM models.
+                  </p>
+                  <p class="nb-2">
+                    ❁ Achieved an F1-Score of 96.85% using BERT with custom
+                    Word2Vec embeddings, effectively minimizing false negatives.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projects_item rounded text-center">
+              <div class="my-2 p-2">
+                <div
+                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
+                >
+                  <img
+                    src="./src/assets/img/tifr.png"
+                    alt="CTR"
+                    class="rounded mb-4 w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-xl text-orange-400 mb-2">
+                  Electron Energy Prediction in CMS experiment at CERN
+                  (Switzerland)
+                </h4>
+                <p class="italic">
+                  <strong>Python, Pyorch, tensorflow</strong>
+                </p>
+                <div class="mt-5">
+                  <p class="nb-2">
+                    ❁ Led an innovative research project at Tata Institute of
+                    Fundamental Research in collaboration with CERN, utilizing
+                    Graph Neural Networks to forecast electron energy in
+                    Geneva's HGCAL Particle Accelerator.
+                  </p>
+                  <p class="nb-2">
+                    ❁ Achieved an RMSE value of 11.62 for precise electron
+                    energy predictions in particle physics.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projects_item rounded text-center">
+              <div class="my-2 p-2">
+                <div
+                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
+                >
+                  <img
+                    src="./src/assets/img/summarization.png"
+                    alt="Text Summarization and Title Generation"
+                    class="rounded mb-4 w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-xl text-orange-400 mb-2">
+                  Text Summarization and Title Generation
+                </h4>
+                <p class="italic">
+                  <strong>Python, LSTM, Transformer, Seq2Seq, PEGASUS, NLP</strong>
+                </p>
+                <div class="mt-5">
+                  <p class="nb-2">
+                    ❁ Developed a text summarization system using LSTM and Transformer models, achieving ROUGE-1 score of 92.5% (Bi-LSTM).
+                  </p>
+                  <p class="nb-2">
+                    ❁ Implemented title generation using Seq2Seq with LSTM, achieving validation accuracy of 81.88%, generating coherent and context-aware titles.
+                  </p>
+                  <p class="nb-2">
+                    ❁ Conducted model evaluation using Amazon Fine Food Reviews and YouTube Video Titles datasets.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="projects_item rounded text-center">
+              <div class="my-2 p-2">
+                <div
+                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
+                >
+                  <img
+                    src="./src/assets/img/ctr.png"
+                    alt="CTR"
+                    class="rounded mb-4 w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-xl text-orange-400 mb-2">
+                  Click-through Rate (CTR) Prediction using Supervised Machine
+                  Learning Models
+                </h4>
+                <p class="italic">
+                  <strong
+                    >Python, Scikit-Learn, XGBoost, LightGBM, Random Forest,
+                    Decision Trees, Pandas</strong
+                  >
+                </p>
+                <div class="mt-5">
+                  <p class="nb-2">
+                    ❁ Enhanced CTR prediction accuracy, helping businesses
+                    experience remarkable growth, with improvements ranging from
+                    10% to 30% or even more, by implementing embedded one-hot
+                    encoding techniques.
+                  </p>
+                  <p class="nb-2">
+                    ❁ Conducted an exhaustive analysis and secured an F-1 score
+                    of 95% while evaluating XGBoost, Random Forest, LightGBM,
+                    and Decision Trees, empowering businesses to streamline
+                    attributes expenditure effectively.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projects_item rounded text-center">
+              <div class="my-2 p-2">
+                <div
+                  class="w-[175px] h-[175px] mx-auto rounded-full overflow-hidden border-4 border-[#df8235] mb-4"
+                >
+                  <img
+                    src="./src/assets/img/spotify.png"
+                    alt="CTR"
+                    class="rounded mb-4 w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-xl text-orange-400 mb-2">
+                  Storytelling with Data (Spotify), Data Analysis Interface
+                </h4>
+                <p class="italic">
+                  <strong>Tableau, SQL, Python, Data Visualization</strong>
+                </p>
+                <div class="mt-5">
+                  <p class="nb-2">
+                    ❁ Analyzed the user base of Spotify in a particular country
+                    and represented that data on a map using Tableau.
+                  </p>
+                  <p class="nb-2">
+                    ❁ Derived logical conclusions that could help Spotify
+                    increase its user base using curated ads.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+
+      <!-- /Projets ends -->
+
+      <!-- publications starts -->
+
+      <section id="publications" class="my-20 py-12">
+        <div
+          class="container mx-auto bg-black/0.50 backdrop-blur-md px-4 py-12 rounded"
+        >
+          <h2 class="text-3xl font-bold mb-16">Publications</h2>
+          <p class="mb-2">
+            ❁ Authored "<strong
+              >Resilience of Urban Rail Networks Depend on Mesoscale and
+              Connectivity Attributes</strong
+            >", currently under review for publication at Nature Cities.
+          </p>
+          <p class="mb-2">
+            ❁ Co-authored "Rail System Threat Analysis" to Risk Analysis for
+            submitting it for peer review.
+          </p>
+          <p class="mb-2">
+            ❁ Co-authored a paper called "<strong
+              >A Network Perspective Can Deter Threats to Soft Infrastructure
+              Targets</strong
+            >" as a Comment to Nature Computational Science.
+          </p>
+          <p class="mb-2">
+            ❁ Published "CTR Prediction of Advertisements using Decision
+            Trees-Based Algorithms" in Isemantic, IEEE, October 2022.DOI:
+            <a href="https://doi.org/10.1109/iSemantic55962.2022.9920363">
+              10.1109/iSemantic55962.2022.9920363
+            </a>
+          </p>
+          <p class="mb-2">
+            ❁ Published "Electron Energy Prediction in High-Granularity
+            Calorimeter of the CMS Detector Using Graph Neural Network" in
+            ICT4SD 2024, Springer LNNS. DOI:
+            <a href="https://doi.org/10.1007/978-981-97-8591-9_48"
+              >https://doi.org/10.1007/978-981-97-8591-9_48</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- /publications ends -->
+      <!-- Contact starts -->
+
+      <section id="contact" class="my-20 py-12">
+        <div
+          class="container mx-auto bg-black/0.50 backdrop-blur-md px-4 py-12 rounded"
+        >
+          <h2 class="text-3xl font-bold mb-16">Contact</h2>
+
+          <div class="flex flex-col md:flex-row gap-4">
+            <div class="flex gap-2 w-full md:w-1/3 items-center">
+              <div
+                class="bg-orange-400 w-[60px] h-[60px] rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-envelope"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold">Email</p>
+                <p>mukherjee.o@northeastern.edu</p>
+              </div>
+            </div>
+            <div class="flex gap-2 w-full md:w-1/3 items-center">
+              <div
+                class="bg-orange-400 w-[60px] h-[60px] rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-telephone"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold">Call Me</p>
+                <p>+1 (617) 516-9182</p>
+              </div>
+            </div>
+            <!-- Download Resume -->
+            <div class="flex gap-2 w-full md:w-1/3 items-center">
+              <div class="bg-orange-400 w-[60px] h-[60px] rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                  <path
+                    d="M8 5a.5.5 0 0 1 .5.5v4.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 10.293V5.5A.5.5 0 0 1 8 5z" />
+                  <path
+                    d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3.5-.5a.5.5 0 0 1-.5-.5V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4h-2.5z" />
+                </svg>
+              </div>
+              <a href="./src/assets/Orijeet _Mukherjee_Resume.pdf"
+                download
+                class="inline-block px-4 py-2 text-sm font-semibold bg-orange-400 text-white rounded hover:bg-orange-500 transition">
+                Download Resume
+              </a>
+            </div>
+
+
+
+          </div>
+
+          
+
+
+
+          <p class="text-xl mt-16 mb-2">Get in touch!</p>
+          <div class="flex gap-4">
+            <a href="#">
+              <div
+                class="hover:bg-orange-500 bg-orange-400 w-[40px] h-[40px] rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-twitter-x"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/orijeet-mukherjee">
+              <div
+                class="hover:bg-orange-500 bg-orange-400 w-[40px] h-[40px] rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="hover:bg-orange-500 bg-orange-400 w-[40px] h-[40px] rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="hover:bg-orange-500 bg-orange-400 w-[40px] h-[40px] rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          
+
+        </div>
+      </section>
+
+      <!-- /Contact ends -->
+
+      <!-- footer -->
+      <footer class="bg-black">
+        <div
+          class="container mx-auto py-24 flex flex-col items-center justify-center"
+        >
+          <!-- <a href="#" class="text-3xl md:text-7xl mb-4 font-bold text-center"
+            >ORIJEET MUKHERJEE</a
+          > -->
+          <small>
+            All Rights Reserved © <span id="current-year"></span>
+            <a href=" https://www.linkedin.com/in/orijeet-mukherjee/" class="text-orange-400"
+              >Developer</a
+            >
+          </small>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./src/assets/js/main.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+      integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".project_slider").slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false,
+          autoplay: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <!-- typed -->
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+ 
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "ML Engineer",
+          "Data Scientist",
+          "Software Developer",
+          "Research Enthusiast"
+        ],
+        typeSpeed: 90,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
