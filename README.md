@@ -1,5 +1,8 @@
 # 🚀 Orijeet Mukherjee - Personal Portfolio
 
+
+[Watch the portfolio demo](./portfolio_demo.mp4)
+
 A modern, responsive personal portfolio website showcasing the professional journey, skills, and projects of Orijeet Mukherjee - a ML/AI Engineer with extensive industry and research experience.
 
 ## 📋 Table of Contents
