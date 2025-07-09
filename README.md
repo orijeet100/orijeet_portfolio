@@ -1,4 +1,4 @@
-# 🚀 Orijeet Mukherjee - Personal Portfolio (https://orijeet100.github.io/orijeet_portfolio/)
+# 🚀 Orijeet Mukherjee - Personal Portfolio [link](https://orijeet100.github.io/orijeet_portfolio/)
 
 https://github.com/user-attachments/assets/b20e46bc-a359-4d3f-9d5c-ba452efce6db
 
