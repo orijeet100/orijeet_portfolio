@@ -244,7 +244,7 @@ Orijeet Mukherjee is a Machine Learning Engineer with extensive experience in:
 - **Domains**: Healthcare analytics, urban resilience, particle physics, NLP
 - **Technologies**: Deep learning, natural language processing, network science
 
-The portfolio showcases a journey from academic research to practical AI applications, demonstrating expertise in transforming complex data into actionable insights.
+The portfolio showcases a journey from academic research to practical AI applications, demonstrating expertise in transforming complex data into actionable insights
 
 ---
 
